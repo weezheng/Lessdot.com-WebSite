@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Personal from '../components/blog/Personal';
-import Site from '../components/blog/Site';
+import Personal from '../components/stats/Personal';
+import Site from '../components/stats/Site';
 
 const Stats = () => (
   <Main
@@ -15,7 +15,7 @@ const Stats = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/blog">Stats</Link>
+            <Link to="/stats">Stats</Link>
           </h2>
         </div>
       </header>
