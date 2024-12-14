@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Personal from '../components/stats/Personal';
-import Site from '../components/stats/Site';
+import Personal from '../components/Stats/Personal';
+import Site from '../components/Stats/Site';
 
 const Stats = () => (
   <Main
     title="Stats"
-    description="Some statistics about Zheng Wee and lesscode.com"
+    description="Some statistics about Michael D'Angelo and mldangelo.com"
   >
     <article className="post" id="stats">
       <header>
