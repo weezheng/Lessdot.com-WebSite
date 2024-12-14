@@ -25,7 +25,7 @@ This site has been a work in progress since 2014. I have tried to make updates t
 
 - Completely gut and redo server integration, use JWT
   - auto deploy backend, keep frontend on CDN.
-- revisit posts/stats
+- revisit posts/blog
   - put one or two examples up from my knowledge base.
 
 ### Repository Cleanup
