@@ -87,7 +87,7 @@ describe('renders the app', () => {
     expect(window.location.pathname).toBe('/projects');
   });
 
-  it('can navigate to /stats', async () => {
+  it('can navigate to /blog', async () => {
     expect.assertions(5);
     const contactLink = document.querySelector(
       '#header > nav > ul > li:nth-child(4) > a',
@@ -97,7 +97,7 @@ describe('renders the app', () => {
       await contactLink.click();
     });
     expect(document.title).toContain('Stats |');
-    expect(window.location.pathname).toBe('/stats');
+    expect(window.location.pathname).toBe('/blog');
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(jsonMock).toHaveBeenCalledTimes(1);
   });
