@@ -1,24 +1,20 @@
-英文环境下的意义：
-简化与去除冗余：
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-“Less”在英语中意味着“更少”，可以传达出“简化”或“去除不必要部分”的理念。而“dot”通常与“点”或“点符号”相关，特别是在网络和编程中，点常用来分隔域名或用于编程语言的表示。
-结合起来，“less dot”可以理解为“减少复杂性”，或者意味着去掉不必要的技术细节，追求简洁的设计和流程。对于技术服务或产品而言，这可能意味着优化、去冗余、提升效率的理念。
-极简主义的设计哲学：
+# Run and deploy your AI Studio app
 
-在设计、软件开发或用户体验（UX）领域，“less”常与极简主义相关。配合“dot”，可能意味着减少不必要的元素，专注于最核心的部分。例如，简洁的用户界面，极简风格的设计，或者简单易用的技术产品。
-网络与编程关联：
+This contains everything you need to run your app locally.
 
-“Dot”在技术领域尤其是在编程和计算机科学中，经常与域名、文件扩展名（如“.com”）、或者编程中的“点操作符”相关。因此，“lessdot”可能给人一种将技术细节简化的印象，暗示着更加直观、简洁的用户体验或者编程风格。
-中文环境下的意义：
-简化与减少：
+View your app in AI Studio: https://ai.studio/apps/86d1d94c-de60-4e2b-b07a-fdf2401159c5
 
-“less”可以理解为“少”或“减少”，而“dot”直接指“点”。从中文语境来看，"less dot"可能表达出“减少点”或者“少一些点”的含义，这同样可以传达出简化或去冗余的理念。
-例如，在一些技术产品或服务中，减少某些繁琐的操作、简化用户的交互流程等。
-简洁、极简哲学：
+## Run Locally
 
-在中文文化中，“简约”是一个常见的设计哲学，“less”也与此相关。结合“dot”，可以理解为“少一些复杂、多一些简洁”，传递出一种简洁、精炼的生活或工作态度。
-可能的应用领域：
-技术产品/服务：如果你从事软件开发、编程工具、技术服务等领域，"lessdot.com"可以作为强调简洁、精简产品的品牌或网站域名。
-设计/UX领域：对于设计、用户体验或界面设计相关的业务来说，"lessdot"可以表示产品或服务秉持极简主义，去掉不必要的装饰和复杂功能。
-教育/博客平台：如果你的内容围绕技术简化、极简设计或简洁编程，"lessdot.com"也是一个非常合适的域名，传递出易懂、简洁高效的理念。
-总的来说，"lessdot.com"非常适合用于任何涉及简化、极简主义、精简技术或设计的项目，能够传达出专注于核心、去繁从简的品牌理念。
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

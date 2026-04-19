@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+  --font-display: "Playfair Display", serif;
+
+  --color-professional-bg: #F9F9F8;
+  --color-professional-fg: #1A1A1A;
+  --color-professional-muted: #FFFFFF;
+  --color-professional-border: #E5E5E5;
+  --color-brand-accent: #FF4400;
+
+  --color-geek-bg: #0D0D0D;
+  --color-geek-fg: #00FF41; 
+  --color-geek-muted: #1A1A1A;
+  --color-geek-border: #333333;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* Theme Switching Logic via data-theme on html or a wrapper */
+[data-theme="professional"] {
+  --background: var(--color-professional-bg);
+  --foreground: var(--color-professional-fg);
+  --muted: var(--color-professional-muted);
+  --border: var(--color-professional-border);
+  font-family: var(--font-sans);
+}
+
+[data-theme="geek"] {
+  --background: var(--color-geek-bg);
+  --foreground: var(--color-geek-fg);
+  --muted: var(--color-geek-muted);
+  --border: var(--color-geek-border);
+  font-family: var(--font-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
