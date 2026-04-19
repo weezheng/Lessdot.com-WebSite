@@ -1,30 +1,24 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { Calendar, Tag } from "lucide-react";
-
-interface Post {
-  slug: string;
-  title: string;
-  date: string;
-  tags: string[];
-}
+import { Calendar } from "lucide-react";
+import { loadAllPosts, type BlogPost } from "../data/blog";
 
 export default function BlogList() {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/posts")
-      .then((res) => res.json())
+    loadAllPosts()
       .then((data) => {
         setPosts(data);
         setLoading(false);
-      });
+      })
+      .catch(() => setLoading(false));
   }, []);
 
   if (loading) {
-    return <div className="max-w-4xl mx-auto py-20 px-4 text-center">Scanning database...</div>;
+    return <div className="max-w-4xl mx-auto py-20 px-4 text-center">Loading posts...</div>;
   }
 
   return (

@@ -3,25 +3,20 @@ import { useParams, Link } from "react-router-dom";
 import Markdown from "react-markdown";
 import { motion } from "motion/react";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
-
-interface Post {
-  title: string;
-  date: string;
-  tags: string[];
-  content: string;
-}
+import { loadPostBySlug, type BlogPost } from "../data/blog";
 
 export default function BlogPost() {
   const { slug } = useParams();
-  const [post, setPost] = useState<Post | null>(null);
+  const [post, setPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`/api/posts/${slug}`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Not found");
-        return res.json();
-      })
+    if (!slug) {
+      setLoading(false);
+      return;
+    }
+
+    loadPostBySlug(slug)
       .then((data) => {
         setPost(data);
         setLoading(false);
