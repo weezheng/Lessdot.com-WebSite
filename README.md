@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LessDot
 
-# Run and deploy your AI Studio app
+> **Scaling Simplicity for the Future.**
+> 
+> LessDot 是一个极简主义驱动的综合性品牌，旨在构建一个连接专业产品矩阵与硬核技术精神的数字生态。
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/86d1d94c-de60-4e2b-b07a-fdf2401159c5
+## 🪐 品牌哲学 (Brand Philosophy)
 
-## Run Locally
+### 1. 语义价值：极简与连接
+*   **Less**: 代表极简、高效、去除冗余。这是现代科技和设计界的核心追求，象征着通过减法实现极致的用户体验。
+*   **Dot**: 代表点、连接、像素。它可以是数据的节点，也可以是创意的起点，更赋予了品牌在 Web3 或波卡 (Polkadot) 等前沿生态中的联想力。
+*   **组合感**: “形容词 + 名词”的 7 字母短域名结构，具备天然的品牌辨识度，兼具硅谷初创公司的活力与高端设计工作室的专业感。
 
-**Prerequisites:**  Node.js
+### 2. 产品矩阵：无限的扩展性
+LessDot 不仅仅是一个站点，它是一个容纳多种可能性的容器：
+*   **抽象优势**: 不同于具象的域名，LessDot 允许品牌跨越工具软件、硬件开发、专业咨询及内容创作等多个领域。
+*   **统一生态**: 未来将以 `LessDot Mail`、`LessDot Code`、`LessDot Analytics` 等产品线形成整齐的商业布局。
 
+### 3. 极客感与专业感的平衡
+*   **Professional Side**: 在主站层面，保持低调与克制，传递商业信赖感。
+*   **Geek Spirit**: 在个人分支，"Dot" 回归代码与终端的原始质感，展示硬核的技术热情。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠 技术实现
+本项目采用 **React + Vite** 构建，通过 **GitHub Actions** 自动化部署至 **GitHub Pages**，并绑定独立域名 **lessdot.com**。
