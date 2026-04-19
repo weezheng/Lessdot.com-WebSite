@@ -86,13 +86,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </p>
                 {/* Social Icons */}
                 <div className="flex items-center space-x-6 text-[#999]">
-                   <a href="#" className="hover:text-professional-fg transition-colors"><Github size={20} /></a>
+                   <a href="https://github.com/weezheng" target="_blank" rel="noreferrer" className="hover:text-professional-fg transition-colors"><Github size={20} /></a>
                    <a href="#" className="hover:text-professional-fg transition-colors"><Facebook size={20} /></a>
                    <a href="#" className="hover:text-professional-fg transition-colors"><Instagram size={20} /></a>
                    <a href="#" className="hover:text-professional-fg transition-colors"><Linkedin size={20} /></a>
                    <a href="#" className="hover:text-professional-fg transition-colors"><Fingerprint size={20} /></a>
                    <a href="#" className="hover:text-professional-fg transition-colors"><Twitter size={20} /></a>
-                   <a href="#" className="hover:text-professional-fg transition-colors"><Mail size={20} /></a>
+                   <a href="mailto:enwee.vip@gmail.com" className="hover:text-professional-fg transition-colors"><Mail size={20} /></a>
                 </div>
              </div>
              <div className="flex md:justify-end space-x-12 text-[10px] uppercase font-bold tracking-widest opacity-40 pt-2">
