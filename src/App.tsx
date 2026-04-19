@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import ProfessionalIndex from "./pages/ProfessionalIndex";
 import GeekIndex from "./pages/GeekIndex";
