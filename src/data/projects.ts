@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     id: "ai-opc",
     title: "AI & OPC",
-    description: "Applying industrial-grade AI and Open Platform Communications to solve everyday complexities.",
+    description: "One Person Company to solve everyday complexities.",
     category: "Industrial Precision",
     tag: "AI Systems",
     icon: Cpu,
